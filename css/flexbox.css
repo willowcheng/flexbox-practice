@@ -6,7 +6,8 @@
 
     .main-header,
     .main-nav,
-    .row {
+    .row,
+    .col {
         display: flex;
     }
 
@@ -16,15 +17,13 @@
     }
 
     .col {
-        flex: 1 50%;
+        flex: 1;
+        flex-direction: column;
     }
 
-    .row {
-        flex-wrap: wrap;
-    }
-
-    .secondary {
-        order: -1;
+    .button {
+        margin-top: auto;
+        align-self: flex-start;
     }
 
 }
@@ -34,14 +33,6 @@
     .main-header {
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    .col {
-        flex-basis: 0;
-    }
-
-    .primary {
-        flex-grow: 1.4;
     }
 
 }
